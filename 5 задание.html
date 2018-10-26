@@ -9,20 +9,21 @@
 		alert('Первое число (действие) Второе число')
 		var x = + prompt ('Введите первое число')
 		var y = + prompt ('Введите второе число')
-		var operation_sign = + prompt ('Введите действие (+=1 , -=2 , *=3 , /=4.)')
-
-
-		if (operation_sign == 1) {
+		var operation = + prompt ('Введите операцию (+=1 , -=2 , *=3 , /=4.)')
+		if (operation == 1) {
 			alert(x + y);
-		} else if (operation_sign == 2) {
+			
+		} else if (operation == 2) {
 			alert(x - y);
-		} else if (operation_sign == 3) {
+			
+		} else if (operation == 3) {
 			alert(x * y);
-		} else if (operation_sign == 4) {
+			;
+		} else if (operation == 4) {
 			alert(x / y);
+		else { 
+			alert('Введите номер операции указанный в начале')
 		}
-
-
 	</script>
 
 </body>
