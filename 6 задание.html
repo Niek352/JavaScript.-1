@@ -5,37 +5,45 @@
 </head>
 <body>
 	<script type="text/javascript">
-		
-
-		function mathOperation (arg1, arg2, operation,) {
-			var arg1 = + prompt ('Введите первое число');
+		var arg1 = + prompt ('Введите первое число');
 		var arg2 = + prompt	('Введите второе число');
 		var operation = + prompt ('Введите операцию (+=1 , -=2 , *=3 , /=4.)');
-		var rezult				
+		var rezult
 
+		function mathOperation (arg1, arg2, operation, ) {
+			if (parseInt(arg1 && arg2)) {
+				switch (operation) {
+					case 1:
+					return alert( rezult = arg1 + arg2);
+					break;
+					
+					case 2:
+					return alert( rezult = arg1 - arg2);
+					break;
 
+					case 3:
+					return alert( rezult = arg1 * arg2);
+					break;
 
+					case 4:
+					if (operation == 4 && arg2 != 0) {
+					return alert( rezult = arg1 / arg2);
+					} else {
+						return alert ('Делить на 0 нельзя');
+					}
+					break;
 
-			switch (operation) {
-				case 1:
-				return alert(arg1 + arg2);
-				break;
-				
-				case 2:
-				return rezult = arg1 - arg2;
-				break;
+					
+				} 
+			} else {
+				alert ('Вы ввели не число!\nИли пытаетесь разделить на 0.')
 
-				case 3:
-				return rezult = arg1 * arg2;
-				break;
-
-				case 4:
-				return rezult = arg1 / arg2;
-				break;
 			}
 		}
 
-		
+	mathOperation(arg1,arg2,operation);
+
+	
 
 
 
