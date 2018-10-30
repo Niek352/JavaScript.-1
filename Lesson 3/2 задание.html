@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HW2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 10;
+		var i = 0;
+		var check_chetnost = function(number) {
+			return (number % 2 == 0) ? true : false;
+		};
+
+
+		do {
+			if (i == 0) {
+				console.log('0  - это ноль')
+				i++;
+			} else if (check_chetnost(i)) {
+				console.log(i + ' - четное число');
+				i++;
+			} else {
+				console.log(i + ' - нечетное число');
+				i++;
+			}
+
+		} while (i<=a);
+
+
+	</script>
+</body>
+</html>
