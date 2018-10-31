@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HW5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		alert('Первое число (действие) Второе число')
+		var x = + prompt ('Введите первое число')
+		var y = + prompt ('Введите второе число')
+		var operation_sign = + prompt ('Введите действие (+=1 , -=2 , *=3 , /=4.)')
+
+
+
+		if (parseInt(x) && parseInt(y)) {
+			if (operation_sign == 1) {
+				alert(x + y);
+			
+			} else if (operation_sign == 2) {
+				alert(x - y);
+			
+			} else if (operation_sign == 3) {
+				alert(x * y);
+			
+			} else if (operation_sign == 4 && y != 0) {
+				alert(x / y);
+			} else {
+			alert('Введите номер операции указанный в начале \nИли вы выбрали второе число 0 при делении');
+			}
+		} else {
+			alert('Вы ввели не число')
+		}
+
+
+		
+
+	</script>
+
+</body>
+</html>
