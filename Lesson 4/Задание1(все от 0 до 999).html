@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HW1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+
+	var chislo = {
+		Единицы : 0,
+		Десятки : 0,
+		Сотни : 0
+	}
+	
+	var Edin = function(){
+		for (let i = 0; i < 9; i++) {
+			chislo.Единицы = chislo.Единицы += 1;
+			console.log(chislo);
+		}
+	}	
+
+	var Edin = function(){
+		for (let i = 0; i < 9; i++) {
+			chislo.Единицы = chislo.Единицы += 1;
+			console.log(chislo);
+
+		} 
+	}	
+	
+	var Desat = function(){
+		for (let i = 0; i < 9; i++) {
+			chislo.Десятки = chislo.Десятки += 1;
+			
+			for (let i = 0; i < 9; i++) {
+				chislo.Единицы = chislo.Единицы += 1;
+			console.log(chislo);
+			}
+			chislo.Единицы = 0;
+			
+		}	
+	}
+		
+	var Sotni = function(){
+		for (let i = 0; i < 9; i++) {
+			chislo.Сотни = chislo.Сотни += 1;
+
+			for (let i = 0; i < 9; i++) {
+			chislo.Десятки = chislo.Десятки += 1;
+			
+				for (let i = 0; i < 9; i++) {
+					chislo.Единицы = chislo.Единицы += 1;
+				console.log(chislo);
+				}
+			chislo.Единицы = 0;	
+			}		
+		chislo.Десятки = 0;	
+		}
+			
+	}
+    
+			
+		Edin();
+		chislo.Единицы = 0;
+		Desat();
+		chislo.Десятки = 0;
+		Sotni();
+	
+	
+	
+
+	</script>
+</body>
+</html>

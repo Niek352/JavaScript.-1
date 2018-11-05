@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    	<script type="text/javascript">
+    		alert('Введите два числа,\nесли они оба будут >0 то будет разность этих чисел, \nеcли они оба будут <0 то будет произведение этих чисел,\nв иных случиях будут сложение');
+		var a = + prompt ('запишите число 1');
+		var b = + prompt ('теперь число 2');
+
+		if (a>=0 && b>=0) {
+			alert(a - b);
+		} else if (a<0 && b<0) {
+			alert(a * b);
+		} else if ((a<0 && b>=0) || (a>=0 && b<0)) {
+			alert(a + b);
+		} else {
+			alert('введите число Please!!')
+		}
+
+
+
+
+    	</script>
+</body>
+</html>

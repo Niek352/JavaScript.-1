@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hw1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num1 = + prompt ('Введите число не более 3 знаков');
+		
+		var str = '';
+		var chislo = {
+			Units  : 0,
+			Tens : 0,
+			Hundreds : 0
+		};
+		if (parseInt(num1)) {
+			var arr = num1.toString().split('');
+			if (arr.length > 3) {
+				alert('Вы ввели число больше 3 знаков');
+				exit();
+			} else {
+				while (arr.length < 3){
+					arr.unshift(0);
+				}
+				chislo.Hundreds = +arr[0]
+				chislo.Tens = +arr[1]
+				chislo.Units = +arr[2]
+			}
+		} else {
+			alert('Вы ввели не число')
+		}
+
+
+
+		console.log(chislo)
+			
+	</script>
+</body>
+</html>

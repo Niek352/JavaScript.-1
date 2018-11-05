@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hw1</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><table class="table"></table></center>	
+
+
+
+
+
+<script type="text/javascript">
+	var doc = document;
+
+/*	function makeid() {
+  		var text = "";
+  		var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+  		for (var i = 0; i < 5; i++){
+    		text += possible.charAt(Math.floor(Math.random() * possible.length));
+  		}
+
+		return text;
+	}*/
+	var a = 0;
+	var numbers = 1;
+	var letters = [  'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+	var makeline = function() {
+		for (let i = 0; i < 9; i++) {
+			var Panel = doc.querySelector('.table');
+			let tr = doc.createElement('tr')
+			tr.classList.add('line' + i);
+			Panel.appendChild(tr)
+		}
+
+	}
+
+
+	var chessLine1 = function (){
+		tr1 = doc.querySelector('.line' + a++);
+		var number_left = doc.createElement('td');
+		number_left.classList.add('numbers');
+		number_left.innerText = numbers++;
+		tr1.appendChild(number_left);
+
+		for (let i = 0; i < 4; i++) {				
+		var	BlackPanel = doc.createElement('td');
+	    BlackPanel.classList.add('Black');	
+		tr1.appendChild(BlackPanel);
+
+		var	WhitePanel = doc.createElement('td');
+	    WhitePanel.classList.add('White');	
+		tr1.appendChild(WhitePanel);
+		}
+	}
+
+	var chessLine2 = function (){
+		tr1 = doc.querySelector('.line' + a++)
+		var number_left = doc.createElement('td');
+		number_left.classList.add('numbers');
+		number_left.innerText = numbers++;
+		tr1.appendChild(number_left);
+
+
+		for (let i = 0; i < 4; i++) {
+		var	WhitePanel = doc.createElement('td');
+	    WhitePanel.classList.add('White');	
+		tr1.appendChild(WhitePanel);			
+
+		var	BlackPanel = doc.createElement('td');	
+	    BlackPanel.classList.add('Black');	
+		tr1.appendChild(BlackPanel);
+		}
+	}
+
+	
+	
+
+
+	makeline()
+	
+
+	word = doc.querySelector('.line' + a++);
+	var words = doc.createElement('td')
+	words.classList.add('pusto');
+		
+	word.appendChild(words);	
+	for (var i = 0; i < 8; i++) {
+		var words = doc.createElement('td')
+		words.classList.add('Words');
+		words.innerText = letters[i];
+		word.appendChild(words);
+	}
+	
+	for (var i = 0; i < 4; i++) {
+		chessLine1()
+		chessLine2()
+	}
+		
+	
+	
+</script>
+
+
+
+</body>
+</html>
