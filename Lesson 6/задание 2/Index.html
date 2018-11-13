@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hw2</title>
+	<style type="text/css">
+		#pokupki {
+			display: flex;
+			border: 1px;
+			flex-direction: column;
+			width: 800px;
+			margin: 0 auto;
+
+		}
+		
+		img {
+			width: 165px;
+			height: 100px;
+		}
+		.tovar h3 { 
+			margin-left: 85px;
+			font-size: 30px;
+			font-family: arial;
+		 }
+		
+		.tovar {
+			justify-content: space-between;
+			border: 1px solid silver;
+			display: flex;
+			align-items: center;
+
+		}
+
+		.price {
+			border: 1px solid silver;
+		}
+
+		.div_but {
+			margin-right: 85px;
+		}
+
+		.button {
+			border-radius: 4px;
+			display:block;
+			text-decoration: none;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+			transition: background-color 0.1s linear;
+			color: #fff;
+			background-color: rgb( 43, 153, 91 );
+			border: 1px solid rgb( 33, 126, 74 );	
+		}
+		.button:active {
+			background-color: #7492E3;
+			border: 1px solid rgb( 33, 126, 74 );
+		}
+
+		.button:hover {
+		background-color: rgb( 75, 183, 141 );
+}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="main">
+		<div id="pokupki">
+			<div class="tovar" id="element_1">
+				<h3>1</h3>
+				<img src="1.webp">
+				<div class="price">3000 руб.</div>
+				<div class="div_but">
+					<button class="button" id="1elem">X</button>
+				</div>		
+			</div>
+
+			<div class="tovar" id="element_2">
+				<h3>2</h3>
+				<img src="1.webp">
+				<div class="price">1000 руб.</div>	
+				<div class="div_but">
+					<button class="button" id="2elem">X</button>
+				</div>			
+			</div>
+			
+			<div class="tovar" id="element_3">
+				<h3>3</h3>
+				<img src="1.webp">
+				<div class="price">2000 руб.</div>
+				<div class="div_but">
+					<button class="button" id="3elem">X</button>
+				</div>	
+			</div>
+			
+			<div class="tovar" id="element_4">
+				<h3>4</h3>
+				<img src="1.webp">
+				<div class="price">4000 руб.</div>	
+				<div class="div_but">
+					<button class="button" id="4elem">X</button>
+				</div>			
+			</div>
+
+		</div>	
+	</div>
+	
+
+
+	<script type="text/javascript">
+		var doc = document;
+		var button1 = doc.getElementById('1elem');
+		function delet_elem() {
+			doc.getElementById('element_1').remove()
+		}
+		button1.addEventListener('click', delet_elem)	
+
+	</script>
+</body>
+</html>
